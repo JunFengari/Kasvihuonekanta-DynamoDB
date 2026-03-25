@@ -1,0 +1,23 @@
+{
+    "Version": "1.0",
+    "DataModel": {
+        "Tables": [
+            {
+                "TableName": "Kasvihuoneet",
+                "KeyAttributes": [
+                    { "AttributeName": "KasvihuoneID", "AttributeType": "S" },
+                    { "AttributeName": "AikaLeimaLaite", "AttributeType": "S" }
+                ],
+                "Indexes": []
+            },
+            {
+                "TableName": "Hälytykset",
+                "KeyAttributes": [
+                    { "AttributeName": "Hälytys", "AttributeType": "S" },
+                    { "AttributeName": "AikaLeima", "AttributeType": "S" }
+                ],
+                "Indexes": []
+            }
+        ]
+    }
+}
