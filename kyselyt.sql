@@ -12,7 +12,7 @@ SELECT * FROM Kasvihuoneet
 WHERE KasvihuoneID='GH3'
 AND LaiteTyyppi='kosteus'
 
--- 3. Käyttötapaus 2: Katso mittaukset tietyn aikaikkunan sisällä kasvihuoneestaGH2
+-- 3. Käyttötapaus 2: Katso mittaukset tietyn aikaikkunan sisällä kasvihuoneesta GH2
 SELECT * FROM Kasvihuoneet
 WHERE KasvihuoneID='GH2'
 AND AikaLeima BETWEEN '2026-03-14T12:00' AND '2026-03-14T12:05'

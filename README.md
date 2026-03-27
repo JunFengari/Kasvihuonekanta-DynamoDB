@@ -18,7 +18,7 @@ Tämä tietokantaprojekti on toinen osa Tietokantojen Jatko -kurssin lopputyöst
 ### Esittelyvideo:
 
 Tulossa pian...
-(Oikea klikkaus ja avaa uudessa välilehdessä: [Youtube](insert link))
+Oikea klikkaus ja avaa uudessa välilehdessä: [Youtube](https://youtu.be/e698aXdAoLg)
 
 ---
 
