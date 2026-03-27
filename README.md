@@ -1,16 +1,24 @@
 # Kasvihuone Kanta
 
-Tulossa pian...
+Kasvihuonekanta on tietokanta joka kuuluu IoT-tietoputkeen. Se kerää kasvihuoneiden eri sensoreista tärkeää ilmastodataa kasvien hyvinvoinnin ja kasvun edistämiseksi.
+Tämän tietokannan päätarkoitus on vastaanottaa reaaliaikaista sensoridataa sekä hälytyksiä kasvihuoneiden sensoreilta. Data tallennetaan aikaleimojen perusteella, mikä mahdollistaa tehokkaita aikasarjakyselyitä.
+
+Käyttötapaukset
+
+1. Katso tietyn kasvihuoneen viimeisimpiä tietoja.
+2. Katso tietoja tietyn aikaikkunan sisällä.
+3. Katso aktiivisia hälytyksiä.
 
 Tämä tietokantaprojekti on toinen osa Tietokantojen Jatko -kurssin lopputyöstä.
 
 ### Dokumentaatio:
 
-Tulossa pian ...
+<a href="https://github.com/JunFengari/Kasvihuonekanta-DynamoDB/raw/main/Kasvihuonekanta_Dokumentaatio.pdf" download>Download PDF</a>
 
 ### Esittelyvideo:
 
-Tulossa pian ...
+Tulossa pian...
+(Oikea klikkaus ja avaa uudessa välilehdessä: [Youtube](insert link))
 
 ---
 

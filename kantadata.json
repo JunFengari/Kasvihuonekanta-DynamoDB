@@ -17,7 +17,7 @@
                     "AttributeType": "S"
                 },
                 "SortKey": {
-                    "AttributeName": "AikaLeimaLaite",
+                    "AttributeName": "AikaLeima",
                     "AttributeType": "S"
                 }
             },
@@ -29,21 +29,21 @@
             "TableData": [
                 {
                     "KasvihuoneID": { "S": "GH1" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:00" },
+                    "AikaLeima": { "S": "2026-03-14T12:00" },
                     "LaiteID": { "S": "LAMPO01" },
                     "LaiteTyyppi": { "S": "lampotila" },
                     "Mittausarvo": { "N": "22.5" }
                 },
                 {
                     "KasvihuoneID": { "S": "GH1" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:05" },
+                    "AikaLeima": { "S": "2026-03-14T12:05" },
                     "LaiteID": { "S": "KOST01" },
                     "LaiteTyyppi": { "S": "kosteus" },
                     "Mittausarvo": { "N": "65" }
                 },
                 {
                     "KasvihuoneID": { "S": "GH1" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:10" },
+                    "AikaLeima": { "S": "2026-03-14T12:10" },
                     "LaiteID": { "S": "VALO01" },
                     "LaiteTyyppi": { "S": "valo" },
                     "Mittausarvo": { "N": "300" }
@@ -51,21 +51,21 @@
 
                 {
                     "KasvihuoneID": { "S": "GH2" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:00" },
+                    "AikaLeima": { "S": "2026-03-14T12:00" },
                     "LaiteID": { "S": "LAMPO02" },
                     "LaiteTyyppi": { "S": "lampotila" },
                     "Mittausarvo": { "N": "30.2" }
                 },
                 {
                     "KasvihuoneID": { "S": "GH2" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:05" },
+                    "AikaLeima": { "S": "2026-03-14T12:05" },
                     "LaiteID": { "S": "KOST02" },
                     "LaiteTyyppi": { "S": "kosteus" },
                     "Mittausarvo": { "N": "40" }
                 },
                 {
                     "KasvihuoneID": { "S": "GH2" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:10" },
+                    "AikaLeima": { "S": "2026-03-14T12:10" },
                     "LaiteID": { "S": "VALO02" },
                     "LaiteTyyppi": { "S": "valo" },
                     "Mittausarvo": { "N": "150" }
@@ -73,21 +73,21 @@
 
                 {
                     "KasvihuoneID": { "S": "GH3" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:00" },
+                    "AikaLeima": { "S": "2026-03-14T12:00" },
                     "LaiteID": { "S": "LAMPO03" },
                     "LaiteTyyppi": { "S": "lampotila" },
                     "Mittausarvo": { "N": "18.0" }
                 },
                 {
                     "KasvihuoneID": { "S": "GH3" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:05" },
+                    "AikaLeima": { "S": "2026-03-14T12:05" },
                     "LaiteID": { "S": "KOST03" },
                     "LaiteTyyppi": { "S": "kosteus" },
                     "Mittausarvo": { "N": "80" }
                 },
                 {
                     "KasvihuoneID": { "S": "GH3" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:10" },
+                    "AikaLeima": { "S": "2026-03-14T12:10" },
                     "LaiteID": { "S": "VALO03" },
                     "LaiteTyyppi": { "S": "valo" },
                     "Mittausarvo": { "N": "500" }
