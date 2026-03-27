@@ -2,7 +2,7 @@
 -- 1. Käyttötapaus 1: Katso viimeisimmät mittaukset kasvihuoneesta GH1
 SELECT * FROM Kasvihuoneet
 WHERE KasvihuoneID='GH1'
-ORDER BY AikaLeimaLaite DESC
+ORDER BY AikaLeima DESC
 
 -- 2. "Käyttötapaus 1": Katso kaikki kosteusmittaukset kasvihuoneestaGH3
 -- Tässä on huomioitava, että koska LaiteTyyppi ei ole avain tässä taulussa, tämä kysely käyttäytyy kuin scan (Query + FilterExpression).
@@ -15,8 +15,8 @@ AND LaiteTyyppi='kosteus'
 -- 3. Käyttötapaus 2: Katso mittaukset tietyn aikaikkunan sisällä kasvihuoneestaGH2
 SELECT * FROM Kasvihuoneet
 WHERE KasvihuoneID='GH2'
-AND AikaLeimaLaite BETWEEN '2026-03-14T12:00' AND '2026-03-14T12:05'
-ORDER BY AikaLeimaLaite ASC;
+AND AikaLeima BETWEEN '2026-03-14T12:00' AND '2026-03-14T12:05'
+ORDER BY AikaLeima ASC;
 
 -- 4. "Käyttötapaus 2": Yhdistetään kasvihuone, laitetyyppi (filter) ja aikaikkuna yhteen kyselyyn: 
 -- Katsotaan valon mittaukset kasvihuoneesta GH2 viimeisen päivän ajalta. 
@@ -24,7 +24,7 @@ ORDER BY AikaLeimaLaite ASC;
 SELECT * FROM Kasvihuoneet
 WHERE KasvihuoneID='GH2'
 AND LaiteTyyppi='valo'
-AND AikaLeimaLaite BETWEEN '2026-03-13T12:00' AND '2026-03-14T12:15'
+AND AikaLeima BETWEEN '2026-03-13T12:00' AND '2026-03-14T12:15'
 
 -- 5. Käyttötapaus 3: Katso aktiiviset hälytykset kaikista kasvihuoneista
 SELECT * FROM Halytykset
