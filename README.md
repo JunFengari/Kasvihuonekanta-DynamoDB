@@ -1,1 +1,40 @@
+# Kasvihuone Kanta
+
 Tulossa pian...
+
+Tämä tietokantaprojekti on toinen osa Tietokantojen Jatko -kurssin lopputyöstä.
+
+### Dokumentaatio:
+
+Tulossa pian ...
+
+### Esittelyvideo:
+
+Tulossa pian ...
+
+---
+
+## Asennus- ja käyttöohjeet
+
+1. Käy [Kasvihuone Kanta GitHub](https://github.com/JunFengari/Kasvihuonekanta-DynamoDB) sivuilla, ja kloonaa
+   repositorio haluamaasi hakemistoon seuraavalla komennolla:
+
+    ```bash
+    git clone https://github.com/JunFengari/Kasvihuonekanta-DynamoDB
+
+    ```
+
+2. Siirry projektihakemistoon ja pystytä Docker kontin komennolla:
+
+    ```bash
+    docker compose up -d
+
+    ```
+
+3. Kun kontti on käynnistynyt, avaa NoSQL Workbench ohjelma.
+
+4. Projects välilehdessä on ylhäällä Import Model nappi, paina sitä, ja lataa kantadata.json tiedosto. Paina Import Model.
+
+5. Avaa Models-valikosta Kasvihuonekanta, ja tee kannalle commit. Valitse samalla oman localhost yhteyden siihen.
+
+6. Avaa sivusta Operation Builder -välilehden. Täältä voit katsella kantaa ja suorittaa kyselyitä. Kyselyt löytyy kyselyt.sql tiedostosta PartiQL-koodina.

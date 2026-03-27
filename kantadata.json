@@ -1,152 +1,148 @@
 {
-    "Kasvihuoneet": [
+    "ModelName": "KasvihuoneKanta",
+    "ModelMetadata": {
+        "DateCreated": "2026-03-26",
+        "DateLastModified": "2026-03-26",
+        "Description": "Kasvihuoneiden mittaukset ja halytykset",
+        "AWSService": "Amazon DynamoDB",
+        "Version": "3.0"
+    },
+    "DataModel": [
         {
-            "PutRequest": {
-                "Item": {
-                    "KasvihuoneID": { "S": "GH1" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:00#LAMPO01" },
-                    "LaiteID": { "S": "LAMPO01" },
-                    "LaiteTyyppi": { "S": "lämpötila" },
-                    "Mittausarvo": { "N": "22.5" }
+            "TableName": "Kasvihuoneet",
+            "BillingMode": "PAY_PER_REQUEST",
+            "KeyAttributes": {
+                "PartitionKey": {
+                    "AttributeName": "KasvihuoneID",
+                    "AttributeType": "S"
+                },
+                "SortKey": {
+                    "AttributeName": "AikaLeimaLaite",
+                    "AttributeType": "S"
                 }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
+            },
+            "NonKeyAttributes": [
+                { "AttributeName": "LaiteID", "AttributeType": "S" },
+                { "AttributeName": "LaiteTyyppi", "AttributeType": "S" },
+                { "AttributeName": "Mittausarvo", "AttributeType": "N" }
+            ],
+            "TableData": [
+                {
                     "KasvihuoneID": { "S": "GH1" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:05#KOST01" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:00" },
+                    "LaiteID": { "S": "LAMPO01" },
+                    "LaiteTyyppi": { "S": "lampotila" },
+                    "Mittausarvo": { "N": "22.5" }
+                },
+                {
+                    "KasvihuoneID": { "S": "GH1" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:05" },
                     "LaiteID": { "S": "KOST01" },
                     "LaiteTyyppi": { "S": "kosteus" },
                     "Mittausarvo": { "N": "65" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
+                },
+                {
                     "KasvihuoneID": { "S": "GH1" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:10#VALO01" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:10" },
                     "LaiteID": { "S": "VALO01" },
                     "LaiteTyyppi": { "S": "valo" },
                     "Mittausarvo": { "N": "300" }
-                }
-            }
-        },
+                },
 
-        {
-            "PutRequest": {
-                "Item": {
+                {
                     "KasvihuoneID": { "S": "GH2" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:00#LAMPO02" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:00" },
                     "LaiteID": { "S": "LAMPO02" },
-                    "LaiteTyyppi": { "S": "lämpötila" },
+                    "LaiteTyyppi": { "S": "lampotila" },
                     "Mittausarvo": { "N": "30.2" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
+                },
+                {
                     "KasvihuoneID": { "S": "GH2" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:05#KOST02" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:05" },
                     "LaiteID": { "S": "KOST02" },
                     "LaiteTyyppi": { "S": "kosteus" },
                     "Mittausarvo": { "N": "40" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
+                },
+                {
                     "KasvihuoneID": { "S": "GH2" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:10#VALO02" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:10" },
                     "LaiteID": { "S": "VALO02" },
                     "LaiteTyyppi": { "S": "valo" },
                     "Mittausarvo": { "N": "150" }
-                }
-            }
-        },
+                },
 
-        {
-            "PutRequest": {
-                "Item": {
+                {
                     "KasvihuoneID": { "S": "GH3" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:00#LAMPO03" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:00" },
                     "LaiteID": { "S": "LAMPO03" },
-                    "LaiteTyyppi": { "S": "lämpötila" },
+                    "LaiteTyyppi": { "S": "lampotila" },
                     "Mittausarvo": { "N": "18.0" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
+                },
+                {
                     "KasvihuoneID": { "S": "GH3" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:05#KOST03" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:05" },
                     "LaiteID": { "S": "KOST03" },
                     "LaiteTyyppi": { "S": "kosteus" },
                     "Mittausarvo": { "N": "80" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
+                },
+                {
                     "KasvihuoneID": { "S": "GH3" },
-                    "AikaLeimaLaite": { "S": "2026-03-14T12:10#VALO03" },
+                    "AikaLeimaLaite": { "S": "2026-03-14T12:10" },
                     "LaiteID": { "S": "VALO03" },
                     "LaiteTyyppi": { "S": "valo" },
                     "Mittausarvo": { "N": "500" }
                 }
-            }
-        }
-    ],
+            ]
+        },
 
-    "Hälytykset": [
         {
-            "PutRequest": {
-                "Item": {
-                    "Hälytys": { "S": "ACTIVE" },
+            "TableName": "Halytykset",
+            "BillingMode": "PAY_PER_REQUEST",
+            "KeyAttributes": {
+                "PartitionKey": {
+                    "AttributeName": "Halytys",
+                    "AttributeType": "S"
+                },
+                "SortKey": {
+                    "AttributeName": "AikaLeima",
+                    "AttributeType": "S"
+                }
+            },
+            "NonKeyAttributes": [
+                { "AttributeName": "LaiteID", "AttributeType": "S" },
+                { "AttributeName": "KasvihuoneID", "AttributeType": "S" },
+                { "AttributeName": "Lisatiedot", "AttributeType": "S" }
+            ],
+            "TableData": [
+                {
+                    "Halytys": { "S": "ACTIVE" },
                     "AikaLeima": { "S": "2026-03-14T12:02" },
                     "LaiteID": { "S": "LAMPO02" },
                     "KasvihuoneID": { "S": "GH2" },
-                    "Lisätiedot": { "S": "Lämpötila liian korkea" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
-                    "Hälytys": { "S": "ACTIVE" },
+                    "Lisatiedot": { "S": "Lampotila liian korkea" }
+                },
+                {
+                    "Halytys": { "S": "ACTIVE" },
                     "AikaLeima": { "S": "2026-03-14T12:06" },
                     "LaiteID": { "S": "KOST02" },
                     "KasvihuoneID": { "S": "GH2" },
-                    "Lisätiedot": { "S": "Kosteus liian alhainen" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
-                    "Hälytys": { "S": "ACTIVE" },
+                    "Lisatiedot": { "S": "Kosteus liian alhainen" }
+                },
+                {
+                    "Halytys": { "S": "ACTIVE" },
                     "AikaLeima": { "S": "2026-03-14T12:07" },
                     "LaiteID": { "S": "KOST03" },
                     "KasvihuoneID": { "S": "GH3" },
-                    "Lisätiedot": { "S": "Kosteus liian korkea" }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
-                    "Hälytys": { "S": "RESOLVED" },
+                    "Lisatiedot": { "S": "Kosteus liian korkea" }
+                },
+                {
+                    "Halytys": { "S": "RESOLVED" },
                     "AikaLeima": { "S": "2026-03-14T12:15" },
                     "LaiteID": { "S": "LAMPO02" },
                     "KasvihuoneID": { "S": "GH2" },
-                    "Lisätiedot": { "S": "Lämpötila normalisoitunut" }
+                    "Lisatiedot": { "S": "Lampotila normalisoitunut" }
                 }
-            }
+            ]
         }
     ]
 }
